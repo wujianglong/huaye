@@ -27,7 +27,7 @@ module.exports = {
   //   assetsPublicPath: "./"
   // },
   // 生产环境是否生成 sourceMap 文件
-  productionSourceMap: true,
+  productionSourceMap: false,
   // css相关配置
   css: {
     // 是否使用css分离插件 ExtractTextPlugin
@@ -56,6 +56,15 @@ module.exports = {
     hotOnly: false,
     proxy: null, // 设置代理
     before: app => {}
+  },
+  configureWebpack: {
+    externals: {
+      vue: "Vue",
+      vuex: "Vuex",
+      'vue-router':'VueRouter',
+      "element-ui": "ELEMENT",
+      "echarts": "echarts"
+    }
   },
   // 第三方插件配置
   pluginOptions: {

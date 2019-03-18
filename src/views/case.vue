@@ -155,7 +155,7 @@ export default {
   },
   data() {
     return {
-      pageSlide: ["案例展示", "案例分布"],
+      pageSlide: ["案例展示"],
       profile_index: 0,
       pageIndex: 1,
       caseList: [
