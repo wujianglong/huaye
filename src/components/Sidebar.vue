@@ -18,9 +18,9 @@
       </li>
       <li>
         <div class="ercode" title="小程序二维码">
-          <div class="ercodeImg">
+          <!-- <div class="ercodeImg">
             <img src="../static/images/erweima.jpg" alt="">
-          </div>
+          </div> -->
         </div>
       </li>
       <li>
@@ -49,7 +49,7 @@ export default {
       window.scrollTo(0, 0);
     },
     tel() {
-      window.location.href = "tel:0791-13767072116";
+      window.location.href = "tel:86-0791-15179188784";
     }
   }
 };
@@ -60,7 +60,7 @@ export default {
     position fixed
     z-index 999
     right 0.125rem
-    bottom 0.125rem
+    top 30vh
     .ercodeImg
       position absolute
       transition all .3s

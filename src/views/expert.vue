@@ -24,11 +24,6 @@
           <p class="tal">专家队伍</p>
           <div class="erpertList">
             <div class="tac">
-              <img class="expertImg" src="../static/images/expert1.png" alt="">
-              <p>车宇林</p>
-              <p>全国桥梁设计大师,国务院特殊津贴专家</p>
-            </div>
-            <div class="tac">
               <img class="expertImg" src="../static/images/expert2.png" alt="">
               <p>李向阳</p>
               <p>建筑结构教授级高工,国务院特殊津贴专家</p>
@@ -42,6 +37,11 @@
               <img class="expertImg" src="../static/images/expert3.png" alt="">
               <p>熊进刚</p>
               <p>南昌大学建筑工程学院教授,结构工程专业博士</p>
+            </div>
+            <div class="tac">
+              <img class="expertImg" src="../static/images/expert5.jpeg" alt="">
+              <p>吴敏捷</p>
+              <p>建筑结构教授级高工,国务院特殊津贴专家</p>
             </div>
           </div>
         </div>

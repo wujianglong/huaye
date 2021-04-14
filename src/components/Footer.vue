@@ -69,7 +69,7 @@
           </p>
           <ul>
             <li>
-              <a href="tel:0791-82101888">联系我们</a>
+              <a href="tel:86-13755651021">联系我们</a>
             </li>
           </ul>
         </div>
@@ -79,7 +79,7 @@
             <img src="../static/images/erweima.jpg" alt="">
             <div>
               <p class="">
-                电话：0791-82101888
+                电话：15179188784
               </p>
               <p>
                 地址：南昌市抚河中路419号华财大厦21楼B座
@@ -93,7 +93,8 @@
           Copyright © 2018 华冶加固
         </span>
         <span class="fr">
-          赣ICP备18013344号-1
+          
+          <a href="http://www.beian.miit.gov.cn">赣ICP备18013344号-1</a>
         </span>
       </div>
     </div>

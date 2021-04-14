@@ -6,7 +6,7 @@
     <Carousel/>
     <Content/>
     <Footer/>
-    <Sidebar/>
+    <!-- <Sidebar/> -->
   </div>
 </template>
 

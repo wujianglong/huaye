@@ -14,13 +14,19 @@
           <div class="fr tel">
             <p class="ft5 fw">全国统一服务热线</p>
             <p class="color fw" style="font-size:0.55rem;">
-              <a class="color" href="tel:13767072116">
-                13767072116<br>
+              <a class="color" href="tel:86-15179188784">
+                15179188784<br>
                 0791-82101888
               </a>
             </p>
           </div>
         </div>
+
+        <div class="wechatImg">
+          <!-- <p>免费咨询</p> -->
+          <img src="../static/images/ercode.png" alt="">
+        </div>
+
         <!-- <div>
           <p class="fw color" style="font-size:0.6rem"></p>
         </div> -->
@@ -92,5 +98,20 @@ img
         margin-top 0.2rem
   .tel
     cursor pointer
+  .wechatImg
+    border 2px solid #00aef3
+    position fixed
+    background #fff
+    left 0
+    top 30vh
+    z-index 9999
+    p
+      font-size 24px
+      height 35px
+      line-height 35px
+      text-align left
+      color #00aef3
+    img
+      width 200px
 
 </style>

@@ -68,7 +68,7 @@
             <p class="commonHeader"><span>公司介绍</span></p>
             <router-link class="profile_content" tag="div" to="/profile">
               <a>
-                <img class="fl" src="../static/images/team/team1.png" width="183" height="122">
+                <img class="fl" src="../static/images/team/team5.jpg" width="160" height="160">
               </a>
               <p>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;江西华冶特种工程技术有限公司成立于2012年，2013年6月获得特种工程（结构补强）专业承包资质。公司办公地址位于江西省西湖区抚河中路419号华财大厦21楼B座。
@@ -204,10 +204,10 @@
           <p class="commonHeader"><span>联系我们</span></p>
           <div>
             <p class="fw tac">
-              <a class="ft6" style="color:#0090cf" href="tel:13767072116">
+              <a class="ft6" style="color:#0090cf" href="tel:86-15179188784">
                 <img class="mt5" src="../static/images/tel1.jpg" alt="">
-                陈先生:13767072116<br>
-                0791-82101888
+                陈先生:15179188784<br>
+                张先生:13755651021
                 <br>
                 <span class="tac color ft5">点击即可咨询</span>
               </a>
@@ -218,7 +218,7 @@
             <div class="tal mt2">
               <p>公司地址：南昌市抚河中路419号华财大厦21楼B座</p>
               <!-- <p>邮编：430223</p> -->
-              <p class="mt2">电话：<a href="tel:0791-82101888">0791-82101888</a>&nbsp;&nbsp;<a href="tel:13767072116">13767072116</a></p>
+              <p class="mt2">电话：<a href="tel:86-13755651021">13755651021</a>&nbsp;&nbsp;<a href="tel:86-15179188784">15179188784</a></p>
               <p class="mt2">网址：https://www.huayejiagu.com</p>
             </div>
             

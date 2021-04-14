@@ -24,10 +24,10 @@
           <p class="tal">团队风采</p>
           <div class="tal">
             <div class="tac">
-              <img class="mb6" src="../static/images/team/team1.png" alt="">
-              <img class="mb6"  src="../static/images/team/team3.png" alt="">
-              <img class="mb6"  src="../static/images/team/team2.png" alt="">
-              <img class="mb6"  src="../static/images/team/team4.png" alt="">
+              <img class="mb6" src="../static/images/team/team5.jpg" alt="">
+              <img class="mb6"  src="../static/images/team/team6.jpg" alt="">
+              <!-- <img class="mb6"  src="../static/images/team/team2.png" alt="">
+              <img class="mb6"  src="../static/images/team/team4.png" alt=""> -->
             </div>
           </div>
         </div>
