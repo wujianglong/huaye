@@ -20,6 +20,9 @@
   padding 0px
   margin 0px
 
+html,body
+  font-size 44px!important
+
 body
   background #fafafa
 

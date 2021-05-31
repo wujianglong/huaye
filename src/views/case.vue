@@ -32,11 +32,11 @@
                       <p>{{item.name}}</p>
                     </router-link>
                   </template> -->
-                  <li @click="allcartfnc(1)">
-                    <img src="../static/images/allcart/allcart1.jpg" alt="">
-                    <p>上饶海澜之家</p>
+                  <li @click="allcartfnc(i + 1)" v-for="(o, i) in newcaseList" :key="i">
+                    <img :src="o.src" alt="">
+                    <p>{{o.name}}</p>
                   </li>
-                  <li @click="allcartfnc(2)">
+                  <!-- <li @click="allcartfnc(2)">
                     <img src="../static/images/allcart/allcart2.png" alt="">
                     <p>上高万象广场</p>
                   </li>
@@ -79,9 +79,9 @@
                   <li @click="allcartfnc(12)">
                     <img src="../static/images/allcart/allcart12.png" alt="">
                     <p>汇融大厦加固</p>
-                  </li>
+                  </li> -->
                 </ul>
-                <ul class="layoutFlex" v-if="pageIndex === 2">
+                <!-- <ul class="layoutFlex" v-if="pageIndex === 2">
                   <li @click="allcartfnc(13)">
                     <img src="../static/images/allcart/allcart13.png" alt="">
                     <p>江西外贸专修学院加固</p>
@@ -98,32 +98,17 @@
                     <img src="../static/images/allcart/allcart16.png" alt="">
                     <p>铜锣湾</p>
                   </li>
-                  <!-- <li @click="allcartfnc(17)">
-                    <img src="../static/images/allcart/allcart17.jpg" alt="">
-                    <p>长安铃木汽车服务4s店加固</p>
-                  </li>
-                  <li @click="allcartfnc(18)">
-                    <img src="../static/images/allcart/allcart18.jpg" alt="">
-                    <p>龙南行政服务中心</p>
-                  </li>
-                  <li @click="allcartfnc(19)">
-                    <img src="../static/images/allcart/allcart19.png" alt="">
-                    <p>广丰龙华一品</p>
-                  </li>
-                  <li @click="allcartfnc(20)">
-                    <img src="../static/images/allcart/allcart20.png" alt="">
-                    <p>江西省中医院</p>
-                  </li> -->
-                </ul>
+                 
+                </ul> -->
               </div>
-              <div class="block">
+              <!-- <div class="block">
                 <el-pagination
                   background
                   layout="prev, pager, next"
                   @current-change="pageChange"
                   :total="20">
                 </el-pagination>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -131,7 +116,7 @@
     </div>
     <!-- <Content/> -->
     <Footer/>
-    <Sidebar/>
+    <!-- <Sidebar/> -->
   </div>
 </template>
 
@@ -158,6 +143,80 @@ export default {
       pageSlide: ["案例展示"],
       profile_index: 0,
       pageIndex: 1,
+      newcaseList: [
+        {
+          name: "艾溪康桥",
+          src: require("../static/images/allcart/new/1.jpg"),
+          desc: "艾溪康桥1#-A座屋顶水箱加固工程",
+          link: "/caseList?id=1"
+        },
+        {
+          name: "抚州翰林苑",
+          src: require("../static/images/allcart/new/2.jpg"),
+          desc: "抚州翰林苑北区商业体改造加固工程",
+          link: "/caseList?id=2"
+        },
+        {
+          name: "绿地瑞慈体检",
+          src: require("../static/images/allcart/new/3.jpg"),
+          desc: "赣江新区绿地瑞慈体检门诊部改造加固项目",
+          link: "/caseList?id=3"
+        },
+        {
+          name: "景德镇陶瓷工业园",
+          src: require("../static/images/allcart/new/4.jpg"),
+          desc: "景德镇陶瓷工业园炭纤维加固项目",
+          link: "/caseList?id=4"
+        },
+        {
+          name: "九江机场航管楼",
+          src: require("../static/images/allcart/new/5.jpg"),
+          desc: "九江机场航管楼、候机楼加固改造工程",
+          link: "/caseList?id=5"
+        },
+        {
+          name: "九江市民中心",
+          src: require("../static/images/allcart/new/6.jpg"),
+          desc: "九江市民中心",
+          link: "/caseList?id=6"
+        },
+        {
+          name: "九颂康瑞和园",
+          src: require("../static/images/allcart/new/7.jpg"),
+          desc: "九颂康瑞和园",
+          link: "/caseList?id=7"
+        },
+        {
+          name: "美的置业悦江府",
+          src: require("../static/images/allcart/new/8.jpg"),
+          desc: "美的置业悦江府",
+          link: "/caseList?id=8"
+        },
+        {
+          name: "南昌市水榭花都",
+          src: require("../static/images/allcart/new/9.jpg"),
+          desc: "南昌市水榭花都II（纯水岸）住宅小区地下室支撑工程",
+          link: "/caseList?id=9"
+        },
+        {
+          name: "万科璞悦里",
+          src: require("../static/images/allcart/new/10.jpg"),
+          desc: "万科璞悦里",
+          link: "/caseList?id=10"
+        },
+        {
+          name: "宜春北岸新天地",
+          src: require("../static/images/allcart/new/11.jpg"),
+          desc: "宜春北岸新天地单层整体加固项目",
+          link: "/caseList?id=11"
+        },
+        {
+          name: "中兆百汇",
+          src: require("../static/images/allcart/new/12.jpg"),
+          desc: "中兆百汇碳纤维加固项目",
+          link: "/caseList?id=12"
+        }
+      ],
       caseList: [
         {
           name: "上饶海澜之家",

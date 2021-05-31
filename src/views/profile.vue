@@ -23,16 +23,43 @@
         <div class="page_content">
           <p class="tal">{{pageSlide[profile_index]}}</p>
           <div class="tal" v-show="profile_index === 0" style="line-height:2">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;江西华冶特种工程技术有限公司成立于2012年6月，并于2013年6月获得特种工程（结构补强）专业承包施工资质。<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司创始人孙芝舲女士系教授级高级工程师、国家一级结构工程师、建筑工程鉴定委员会专家成员、特种专业加固行业协会理事，曾参与锚杆静压桩国家规范编制工作。公司现有工程技术人员30余名，其中一、二级建造师3名，国家一级结构工程师3名，高级工程师2名，工程师3名。<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司主要经营项目：建筑、桥梁、隧道、钢结构、水利水电工程的加固设计；桥梁顶升及基础加固施工；文物加固和修缮施工；建筑物倾斜、纠偏、平移加固施工；基础不均匀沉降加固施工；预应力加固施工；粘贴碳纤维布加固施工；钢筋植筋加固施工；粘贴钢板及包钢加固施工；混凝土构件增大截面加固施工；住宅及商业体结构改造加固施工；混凝土构件顶升置换加固施工；静压锚杆桩加固施工；钢结构加固施工；混凝土构件静力切割施工；裂缝修补施工；防水堵漏施工等。<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自始建以来，公司已承接各种除险、加固、改造项目300余项，许多工程都是在克服现场施工环境差、工期紧、技术难度高、危险系数大等情况下，保质保量完成了业主委托的任务，受到质监、监理、设计单位的一致好评，并得到上级主管单位的认可。经过多年的探索，我们总结出许多先进经验：如锚杆桩逆向施工法等，同时还拥有一批有着实际经验的专业技术工人施工队伍，为公司今后的发展奠定了坚实的基础。<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;现公司发展初具规模，得到了车宇琳、李向阳、吴敏捷、谌润水、熊进刚等国内及省内知名专家及大学院校学者的技术支持，使我公司在处理技术难度高、危险性大等特殊加固工程有了强大的技术支持。<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;江西华冶特种工程技术有限公司成立于2012年6月，目前已获得特种工程（结构补强）专业承包、市政公用工程专业总承包叁级及房屋建筑总承包叁级等施工资质。<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司创始人孙芝舲女士系教授级高级工程师、国家一级结构工程师、建筑工程鉴定委员会专家成员、特种专业加固行业协会理事，曾参与锚杆静压桩国家规范编制工作。公司现有工程技术人员30余名，其中一、二级建造师3名，国家一级结构工程师3名，高级工程师3名，工程师3名。<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司主要经营项目:建筑加固工程、水利水电加固工程、隧道工程、钢结构工程、道路、桥梁加固工程、室内为装饰工程、房屋建筑工程、亮化工程、机电安装工程、土石方工程、房屋拆迁工程、地基与基础工程、地质灾害治理服务、建筑材料、装饰材料的批发、零售等。<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自始建以来，公司已承接各种除险、加固、改造项目500余项，许多工程都是在克服现场施工环境差、工期紧、技术难度高、危险系数大等情况下，保质保量完成了业主委托的任务，受到质监、监理、设计单位的一致好评，并得到上级主管单位的认可。经过多年的探索，我们总结出许多先进经验：如锚杆桩逆向施工法等，同时还拥有一批有着实际经验的专业技术工人施工队伍，为公司今后的发展奠定了坚实的基础。<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;现公司发展稳定，产能效益良好，于2020年通过国家级“高新技术企业”及诚信企业“AAA”认定，得到了省内外知名专家及大学院校学者的支持，使我司在处理技术难度高、危险性大等特殊加固工程有了强大的技术力量。公司现已获实用新型专利2项，获软件著作权登记证书10项。<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;近年来，公司与省内外工业建筑材料产商、科学技术研究院及省内外各大高校达成了合作，为诸多全国30强地产商及世界500强企业提供系统性加固解决方案。
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们公司一直秉承“以人为本，锐意进取”的经营理念，以完善的人才和技术优势，为广大客户提供安全有效的结构加固技术，让新老建筑实现更高的使用价值。
           </div>
           <div class="tal fw licenseImg" v-show="profile_index === 1">
-            <img src="../static/images/license/l4.png" alt="">
-            <img style="margin-top:1rem" src="../static/images/license/l1.jpg" alt="">
+            <!-- <img src="../static/images/license/l4.png" alt="">
+            <img style="margin-top:1rem" src="../static/images/license/l1.jpg" alt=""> -->
+
+            <img class="img1" src="../static/images/profile/img1.jpeg" alt="">
+            <img class="img1" src="../static/images/profile/img13.jpg" alt="">
+            <!-- <img src="../static/images/profile/img1.jpeg" alt=""> -->
+            <img src="../static/images/profile/img9.jpg" alt="">
+            <img src="../static/images/profile/img10.jpg" alt="">
+            <img src="../static/images/profile/img8.jpg" alt="">
+            <img src="../static/images/profile/img8.jpg" alt="">
+            <img src="../static/images/profile/img11.jpg" alt="">
+            <img src="../static/images/profile/img2.jpg" alt="">
+            <img src="../static/images/profile/img3.jpg" alt="">
+            <img src="../static/images/profile/img4.jpg" alt="">
+            <img src="../static/images/profile/img5.jpg" alt="">
+            <img src="../static/images/profile/img6.jpg" alt="">
+            <img src="../static/images/profile/img7.jpg" alt="">
+            
+            
+            <img src="../static/images/profile/img12.jpg" alt="">
+            
+
+            <img src="../static/images/profile/img14.jpg" alt="">
+            <img src="../static/images/profile/img15.jpg" alt="">
+            <img src="../static/images/profile/img16.jpg" alt="">
+            <img src="../static/images/profile/img17.jpg" alt="">
+
+
             <!-- <div>
               <img style="display:inline-block;width:50%" src="../static/images/license/l2.jpg" alt="">
               <img style="display:inline-block;width:50%" src="../static/images/license/l3.png" alt="">
@@ -237,12 +264,13 @@
               网址：https://www.huayejiagu.com
             </div> -->
           </div>
+        
         </div>
       </div>
     </div>
     <!-- <Content/> -->
     <Footer/>
-    <Sidebar/>
+    <!-- <Sidebar/> -->
   </div>
 </template>
 
@@ -332,6 +360,8 @@ export default {
     .page_content
       .licenseImg
         img
+          width 50%
+        .img1
           width 100%
       flex 7
       p

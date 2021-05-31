@@ -33,11 +33,11 @@
               <p>谌润水</p>
               <p>江西省桥梁专家,国务院特殊津贴专家</p>
             </div>
-             <div class="tac">
+             <!-- <div class="tac">
               <img class="expertImg" src="../static/images/expert3.png" alt="">
               <p>熊进刚</p>
               <p>南昌大学建筑工程学院教授,结构工程专业博士</p>
-            </div>
+            </div> -->
             <div class="tac">
               <img class="expertImg" src="../static/images/expert5.jpeg" alt="">
               <p>吴敏捷</p>
@@ -49,7 +49,7 @@
     </div>
     <!-- <Content/> -->
     <Footer/>
-    <Sidebar/>
+    <!-- <Sidebar/> -->
   </div>
 </template>
 

@@ -42,7 +42,7 @@
     </div>
     <!-- <Content/> -->
     <Footer/>
-    <Sidebar/>
+    <!-- <Sidebar/> -->
   </div>
 </template>
 

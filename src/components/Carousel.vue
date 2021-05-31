@@ -7,23 +7,20 @@
                 <img src="http://www.txcjz.com/uploads/allimg/150326/150408/4-15040PI024U8.jpg" alt="">
             </swiper-slide>
             <!-- <swiper-slide>
-                <img src="http://www.txcjz.com/uploads/allimg/150326/150408/1-15040PHI3112.jpg" alt="">
-            </swiper-slide> -->
-            <swiper-slide>
                 <img src="http://www.txcjz.com/uploads/allimg/150326/150408/4-15040PHU4917.jpg" alt="">
-            </swiper-slide>
+            </swiper-slide> -->
             <swiper-slide>
                 <img src="../static/images/timg1.jpg" width="1440" height="460" alt="">
             </swiper-slide>
-            <!-- timg.jpeg -->
             <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
+        <!-- <video src="@/static/video/video.mp4" autoplay="autoplay" loop="loop" muted="muted" width="1200px" height="200px"></video> -->
       </div>
     </div>
   </div>
 </template>
 <script>
-import { swiper, swiperSlide } from "vue-awesome-swiper"
+import { swiper, swiperSlide } from "vue-awesome-swiper";
 export default {
   name: "Carousel",
   data() {

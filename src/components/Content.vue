@@ -66,7 +66,7 @@
           <!-- 公司简介 -->
           <div class="profile">
             <p class="commonHeader"><span>公司介绍</span></p>
-            <router-link class="profile_content" tag="div" to="/profile">
+            <!-- <router-link class="profile_content" tag="div" to="/profile">
               <a>
                 <img class="fl" src="../static/images/team/team5.jpg" width="160" height="160">
               </a>
@@ -74,18 +74,17 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;江西华冶特种工程技术有限公司成立于2012年，2013年6月获得特种工程（结构补强）专业承包资质。公司办公地址位于江西省西湖区抚河中路419号华财大厦21楼B座。
                 公司创始人孙芝舲女士系教授级高级工程师、国家一级结构工程师、建筑工程鉴定委员会专家成员、特种专业加固行业协会理事，曾参与锚杆静压桩国家规范编制工作。公司现有工程技术人员30余名，其中一、二级建造师3名，国家一级结构工程师3名，高级工程师2名，工程师3名。
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司主要经营项目：建筑结构加固设计；建筑物倾斜、纠偏、平移加固；基础不均匀沉降加固；粘贴碳纤维布加固；钢筋植筋加固；粘贴钢板及包钢加固...
-                <!-- 混凝土构件增大截面加固；住宅及商业体结构改造加固；混凝土构件顶升置换加固；静压锚杆桩加固；钢结构加固；混凝土构件静力切割；裂缝修补；防水堵漏；水利水电工程加固；桥梁、涵洞的除险加固等技术问题 -->
-                <!-- <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自始建以来，公司已承接各种除险、加固、改造项目300余项，许多工程都是在克服现场施工环境差、工期紧、技术难度高、危险系数大等情况下，保质保量完成了业主委托的任务，受到质监、监理、设计单位的一致好评，并得到上级主管单位的认可。经过多年的探索，我们总结出许多先进经验：如锚杆桩逆向施工法等，同时还拥有一批有着实际经验的专业技术工人施工队伍，为公司今后的发展奠定了坚实的基础。
-                我们公司一直坚持“以人为本，锐意进取”的经营理念，以完善的人才和技术优势，为广大客户提供安全有效的结构加固技术，让新老建筑实现更完美的社会价值。 -->
               </p>
-            </router-link>
+            </router-link> -->
+            
+            <video id="video1" :class="flag? '': 'noview'" style="margin: 10px" src="@/static/video/video.mp4" controls autoplay="autoplay" loop="loop" muted="muted" width="480px"></video>
           </div>
           <!-- 公司资质 -->
           <div class="carousel">
             <p class="commonHeader"><span>公司资质</span></p>
             <div class="carouselImg">
               <div>
-                <img style="width:100%;height:100%;" src="../static/images/license/l4.png" alt="">
+                <img style="width:100%;height:100%;" src="../static/images/profile/img1.jpeg" alt="">
               </div>
               <div>
                 <span>
@@ -234,6 +233,7 @@ export default {
   name: "layout",
   data() {
     return {
+      flag: true,
       companyInfo: [
         {
           name: "农业发展银行江西省分行加固工程",
@@ -289,6 +289,34 @@ export default {
         }
       ]
     };
+  },
+  // mounted() {
+  //   let self = this;
+  //   window.onscroll = function() {
+  //     self.inputchange();
+  //   };
+  // },
+  methods: {
+    isElementInViewport() {
+      //获取元素是否在可视区域
+      let video1 = document.getElementById("video1");
+      var rect = video1.getBoundingClientRect();
+      return rect.top >= 0 || rect.top < -rect.height;
+    },
+    inputchange() {
+      var time;
+      let self = this;
+      if (time) {
+        clearTimeout(time);
+        // time = setTimeout(() => {
+        //   self.flag = this.isElementInViewport();
+        // }, 200);
+      } else {
+        time = setTimeout(() => {
+          self.flag = this.isElementInViewport();
+        }, 200);
+      }
+    }
   }
 };
 </script>
@@ -417,6 +445,8 @@ export default {
       a
         color #2c3e50
         
-
-
+.noview
+  position fixed
+  bottom 0
+  left 20px
 </style>

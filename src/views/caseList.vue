@@ -34,7 +34,7 @@
               <p>{{caseList[select_index].desc}}</p>
               <div class="mt5 prevNext">
                 <span class="fl" @click="prevFnc()">上一篇:{{1 > select_index ? '没有了':caseList[select_index - 1].name}}</span>
-                <span class="fr" @click="nextFnc()">下一篇:{{15 > select_index ? caseList[select_index + 1].name : '没有了'}}</span>
+                <span class="fr" @click="nextFnc()">下一篇:{{12 > select_index ? caseList[select_index + 1].name : '没有了'}}</span>
               </div>
             </div>
           </div>
@@ -43,7 +43,7 @@
     </div>
     <!-- <Content/> -->
     <Footer/>
-    <Sidebar/>
+    <!-- <Sidebar/> -->
   </div>
 </template>
 
@@ -74,113 +74,77 @@ export default {
       nextTextL: "",
       caseList: [
         {
-          name: "上饶海澜之家",
-          src: require("../static/images/allcart/allcart1.jpg"),
-          desc: "上饶海澜之家整体改造（碳纤维、粘钢、增大截面）加固工程",
+          name: "艾溪康桥",
+          src: require("../static/images/allcart/new/1.jpg"),
+          desc: "艾溪康桥1#-A座屋顶水箱加固工程",
           link: "/caseList?id=1"
         },
         {
-          name: "上高万象广场",
-          src: require("../static/images/allcart/allcart2.png"),
-          desc: "上高万象广场碳纤维，粘贴钢板加固工程",
+          name: "抚州翰林苑",
+          src: require("../static/images/allcart/new/2.jpg"),
+          desc: "抚州翰林苑北区商业体改造加固工程",
           link: "/caseList?id=2"
         },
         {
-          name: "九江机场",
-          src: require("../static/images/allcart/allcart3.jpg"),
-          desc: "九江机场航站楼整体改造加固工程",
+          name: "绿地瑞慈体检",
+          src: require("../static/images/allcart/new/3.jpg"),
+          desc: "赣江新区绿地瑞慈体检门诊部改造加固项目",
           link: "/caseList?id=3"
         },
         {
-          name: "华强医疗器械公司",
-          src: require("../static/images/allcart/allcart4.jpg"),
-          desc: "江西华强医疗器械有限公司整体置换，梁，柱增大面积",
+          name: "景德镇陶瓷工业园",
+          src: require("../static/images/allcart/new/4.jpg"),
+          desc: "景德镇陶瓷工业园炭纤维加固项目",
           link: "/caseList?id=4"
         },
         {
-          name: "南昌弘益科技",
-          src: require("../static/images/allcart/allcart5.jpg"),
-          desc: "南昌弘益科技有限公司，梁粘钢，碳纤维加固工程",
+          name: "九江机场航管楼",
+          src: require("../static/images/allcart/new/5.jpg"),
+          desc: "九江机场航管楼、候机楼加固改造工程",
           link: "/caseList?id=5"
         },
         {
-          name: "安义农业银行加固",
-          src: require("../static/images/allcart/allcart6.jpg"),
-          desc: "安义县农业银行粘钢加固工程",
+          name: "九江市民中心",
+          src: require("../static/images/allcart/new/6.jpg"),
+          desc: "九江市民中心",
           link: "/caseList?id=6"
         },
         {
-          name: "广丰龙溪集团龙华一品",
-          src: require("../static/images/allcart/allcart7.png"),
-          desc: "广丰龙溪集团龙华一品柱置换加固",
+          name: "九颂康瑞和园",
+          src: require("../static/images/allcart/new/7.jpg"),
+          desc: "九颂康瑞和园",
           link: "/caseList?id=7"
         },
         {
-          name: "抚州农业银行总行加固",
-          src: require("../static/images/allcart/allcart8.jpg"),
-          desc: "抚州市农业银行门洞静力切割，粘钢加固工程",
+          name: "美的置业悦江府",
+          src: require("../static/images/allcart/new/8.jpg"),
+          desc: "美的置业悦江府",
           link: "/caseList?id=8"
         },
         {
-          name: "抚州沃尔玛",
-          src: require("../static/images/allcart/allcart9.jpg"),
-          desc: "抚州市沃尔沃商场纤维，粘钢加固工程",
+          name: "南昌市水榭花都",
+          src: require("../static/images/allcart/new/9.jpg"),
+          desc: "南昌市水榭花都II（纯水岸）住宅小区地下室支撑工程",
           link: "/caseList?id=9"
         },
         {
-          name: "新建中心",
-          src: require("../static/images/allcart/allcart10.jpg"),
-          desc: "新建县新建中心商业体区域梁增大截面，碳纤维加固工程",
+          name: "万科璞悦里",
+          src: require("../static/images/allcart/new/10.jpg"),
+          desc: "万科璞悦里",
           link: "/caseList?id=10"
         },
         {
-          name: "新建欧尚超市",
-          src: require("../static/images/allcart/allcart11.jpg"),
-          desc: "南昌欧尚超市整体(碳纤维，粘钢，增大截面)加固工程",
+          name: "宜春北岸新天地",
+          src: require("../static/images/allcart/new/11.jpg"),
+          desc: "宜春北岸新天地单层整体加固项目",
           link: "/caseList?id=11"
         },
         {
-          name: "汇融大厦加固",
-          src: require("../static/images/allcart/allcart12.png"),
-          desc: "汇融大厦12层梁碳纤维，粘贴钢板加固工程",
+          name: "中兆百汇",
+          src: require("../static/images/allcart/new/12.jpg"),
+          desc: "中兆百汇碳纤维加固项目",
           link: "/caseList?id=12"
-        },
-        {
-          name: "江西外贸专修学院加固",
-          src: require("../static/images/allcart/allcart13.png"),
-          desc: "江西外贸专修学院整体加固",
-          link: "/caseList?id=13"
-        },
-        {
-          name: "江西省国家安全厅加固",
-          src: require("../static/images/allcart/allcart14.png"),
-          desc: "江西省国家安全厅柱增大截面，碳纤维加固工程",
-          link: "/caseList?id=14"
-        },
-        {
-          name: "湾里行政中心",
-          src: require("../static/images/allcart/allcart15.png"),
-          desc: "湾里行政中心加固工程",
-          link: "/caseList?id=15"
-        },
-        {
-          name: "铜锣湾",
-          src: require("../static/images/allcart/allcart16.png"),
-          desc: "铜锣湾加固工程",
-          link: "/caseList?id=16"
         }
-        // {
-        //   name: "长安铃木汽车服务4s店",
-        //   src: require("../static/images/allcart/allcart17.jpg"),
-        //   desc: "长安铃木汽车服务4s店加固",
-        //   link: "/caseList?id=17"
-        // },
-        // {
-        //   name: "龙南行政服务中心",
-        //   src: require("../static/images/allcart/allcart18.jpg"),
-        //   desc: "龙南行政服务中心加固工程",
-        //   link: "/caseList?id=18"
-        // }
       ]
     };
   },
@@ -202,7 +166,7 @@ export default {
       }
     },
     nextFnc() {
-      if (this.select_index > 14) {
+      if (this.select_index > 11) {
         return false;
       } else {
         this.select_index++;
