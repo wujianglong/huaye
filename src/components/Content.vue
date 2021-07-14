@@ -106,28 +106,28 @@
               <template v-for="(item,index) in companyInfo">
                 <router-link tag="li" :to="'./companyInfo?index=' + index " :key="index">
                   <span>{{item.name}}</span>
-                  <span class="fr">2018-8-27</span>
+                  <span class="fr">2021-5-31</span>
                 </router-link>
               </template>
               <!-- <li>
                 <span>公司更名为北京天祥诚建设工程有限公司</span>
-                <span class="fr">2018-8-27</span>
+                <span class="fr">2021-5-31</span>
               </li>
               <li>
                 <span>公司更名为北京天祥诚建设工程有限公司</span>
-                <span class="fr">2018-8-27</span>
+                <span class="fr">2021-5-31</span>
               </li>
               <li>
                 <span>公司更名为北京天祥诚建设工程有限公司</span>
-                <span class="fr">2018-8-27</span>
+                <span class="fr">2021-5-31</span>
               </li>
               <li>
                 <span>公司更名为北京天祥诚建设工程有限公司</span>
-                <span class="fr">2018-8-27</span>
+                <span class="fr">2021-5-31</span>
               </li>
               <li>
                 <span>公司更名为北京天祥诚建设工程有限公司</span>
-                <span class="fr">2018-8-27</span>
+                <span class="fr">2021-5-31</span>
               </li> -->
             </ul>
           </div>
@@ -138,28 +138,28 @@
               <template v-for="(item,index) in tradeInfo">
                 <router-link tag="li" :to="'./tradeInfo?index=' + index " :key="index">
                   <span>{{item.name}}</span>
-                  <span class="fr">2018-8-27</span>
+                  <span class="fr">2021-5-31</span>
                 </router-link>
               </template>
               <!-- <li>
                 <span>公司更名为北京天祥诚建设工程有限公司</span>
-                <span class="fr">2018-8-27</span>
+                <span class="fr">2021-5-31</span>
               </li>
               <li>
                 <span>公司更名为北京天祥诚建设工程有限公司</span>
-                <span class="fr">2018-8-27</span>
+                <span class="fr">2021-5-31</span>
               </li>
               <li>
                 <span>公司更名为北京天祥诚建设工程有限公司</span>
-                <span class="fr">2018-8-27</span>
+                <span class="fr">2021-5-31</span>
               </li>
               <li>
                 <span>公司更名为北京天祥诚建设工程有限公司</span>
-                <span class="fr">2018-8-27</span>
+                <span class="fr">2021-5-31</span>
               </li>
               <li>
                 <span>公司更名为北京天祥诚建设工程有限公司</span>
-                <span class="fr">2018-8-27</span>
+                <span class="fr">2021-5-31</span>
               </li> -->
             </ul>
           </div>

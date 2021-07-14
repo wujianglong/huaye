@@ -133,6 +133,7 @@ export default {
         height 10rem
       .erpertList
         >div
+          margin-top 40px
           float left
-          width 50%
+          width 100%
 </style>

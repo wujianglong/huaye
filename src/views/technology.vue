@@ -21,7 +21,76 @@
           </ul>
         </div>
         <div class="page_content">
-          <p class="tal">{{pageSlide[profile_index]}}</p>
+          <div v-if="profile_index === -1">
+            <div>
+              <ul>
+                <li>
+                  <div>
+                    <img src="" alt="">
+                  </div>
+                  <p>高延性混凝土工艺 t1</p>
+                </li>
+
+                <li>
+                  <div>
+                    <img src="" alt="">
+                  </div>
+                  <p>混凝土置换 t2</p>
+                </li>
+
+                <li>
+                  <div>
+                    <img src="" alt="">
+                  </div>
+                  <p>裂缝修补工艺 t3</p>
+                </li>
+
+                <li>
+                  <div>
+                    <img src="" alt="">
+                  </div>
+                  <p>桥梁加固 t4</p>
+                </li>
+
+                <li>
+                  <div>
+                    <img src="" alt="">
+                  </div>
+                  <p>碳布加固 t5</p>
+                </li>
+
+                <li>
+                  <div>
+                    <img src="" alt="">
+                  </div>
+                  <p>碳纤维布 t6</p>
+                </li>
+
+                <li>
+                  <div>
+                    <img src="" alt="">
+                  </div>
+                  <p>凿除或拆除 t7</p>
+                </li>
+               
+                <li>
+                  <div>
+                    <img src="" alt="">
+                  </div>
+                  <p>增大截面 t8</p>
+                </li>
+
+                <li>
+                  <div>
+                    <img src="" alt="">
+                  </div>
+                  <p>粘贴钢板 t9</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="tal" v-if="profile_index !== -1">{{pageSlide[profile_index]}}</p>
           <div class="tal" v-show="profile_index === 0">
             <p>采用化学植筋法将钢筋植入混凝土结构，相当于在结构体内加上了预埋钢筋。多用于结构改造、接建、续建时新旧混凝土间钢筋锚固和采用加大截面法加固时新增钢筋的锚固。</p>
             <h4>工艺流程</h4>
@@ -38,10 +107,10 @@
             <p>(6)适用于重载及各种震动负载。锚固厚度较大。</p>
             
             <p>裂缝的修补必须以结构可靠性鉴定为依据。通过现场调查、检测和分析，对裂缝的起因、属性和类别作出判断，并根据裂缝的发展程度、所处的位置与环境，检测裂缝可能造成的危害作出鉴定。据此，才能有针对性地选择适用的修补方法进行防治。</p>
-            <div class="techImg layoutFlex">
+            <!-- <div class="techImg layoutFlex">
               <img src="../static/images/tech/t1/t1.png" alt="">
               <img src="../static/images/tech/t1/t2.png" alt="">
-            </div>
+            </div> -->
           </div>
           <div class="tal" v-show="profile_index === 1">
             <h4>工艺流程</h4>
@@ -57,10 +126,10 @@
             <p>(3)恢复结构使用功能，提高其防水，抗渗能力;</p>
             <p>(4)消除裂缝对人们形成的心理压力;</p>
             <p>(5)改善结构外观</p>
-            <div class="techImg layoutFlex">
+            <!-- <div class="techImg layoutFlex">
               <img src="../static/images/tech/t2/t1.png" alt="">
               <img src="../static/images/tech/t2/t2.png" alt="">
-            </div>
+            </div> -->
           </div>
           <div class="tal" v-show="profile_index === 2">
             <p>外粘型钢(角钢或槽钢)是将型钢与原构件采用改性环氧树脂灌注胶粘结，使两者能粘结成整体并共同受力工作的加固方法。适用于需要大幅度提高截面承载力和抗震能力的钢筋混凝土梁、构件的加固。</p>
@@ -74,11 +143,11 @@
             <p>(3)简洁轻巧:与其它加固方法比较，粘钢加固的施工，干净利落，不会导致建筑物内其他构件的连锁加固。</p>
             <p>(4)灵活多样:适应性很强，能够解决生产上和生活上各种有关问题。</p>
             <p>(5)经济合理:由于施工快，避免或减少工厂停产时间，节约加固材料经济效益很高。</p>
-            <div class="techImg layoutFlex">
+            <!-- <div class="techImg layoutFlex">
               <img src="../static/images/tech/t3/t1.png" alt="">
               <img src="../static/images/tech/t3/t2.png" alt="">
               <img src="../static/images/tech/t3/t3.png" alt="">
-            </div>
+            </div> -->
           </div>
           <div class="tal" v-show="profile_index === 3">
             <p>建筑结构胶将钢板(型钢)与混凝士紧密粘接，将加固件与被加固体合为一体，结构胶固化时间短，完全固化后即可以正常受力工作。施工简便、快捷、基本不增加被加固构件截面尺寸和重量。</p>
@@ -95,10 +164,10 @@
             <p>(2)加固工程几乎不增大原结构物的尺寸;</p>
             <p>(3)能在短期内完成加固工程;</p>
             <p>(4)几乎可以不改变具有历史价值建筑的原有艺术特点。</p>
-            <div class="techImg layoutFlex">
+            <!-- <div class="techImg layoutFlex">
               <img src="../static/images/tech/t4/t1.png" alt="">
               <img src="../static/images/tech/t4/t2.png" alt="">
-            </div>
+            </div> -->
           </div>
           <div class="tal" v-show="profile_index === 4">
             <p>由于它具有工艺简单、施工经验丰富、受力可靠、加固费用经济等优点，很容易为人们所接受。</p>
@@ -111,10 +180,10 @@
             <p>(1)能充分发挥钢材和混凝士整体工作性能，加固效果好。</p>
             <p>(2)混凝土硬化时间长，需长期养护。</p>
             <p>(3)本方法不适用于素混凝士构件.原构件混凝士强度等级不应低于C10。</p>
-            <div class="techImg layoutFlex">
+            <!-- <div class="techImg layoutFlex">
               <img src="../static/images/tech/t5/t1.png" alt="">
               <img src="../static/images/tech/t5/t2.png" alt="">
-            </div>
+            </div> -->
           </div>
           <div class="tal" v-show="profile_index === 5">
             <h4>工艺流程</h4>
@@ -126,21 +195,21 @@
             <p>(2)抗酸碱盐类介质的腐蚀，应用面广。加固后能大提高结构的耐腐性耐久性，可以应用于各种工作环境的构件加固。</p>
             <p>(3)可以有效的封闭混凝土结构的裂缝,延长结构的使用寿命。</p>
             <p>(4)易于保持结构原状，基本不增加结构自重及截面尺寸</p>
-            <div class="techImg layoutFlex">
+            <!-- <div class="techImg layoutFlex">
               <img src="../static/images/tech/t6/t1.png" alt="">
               <img src="../static/images/tech/t6/t2.png" alt="">
-            </div>
+            </div> -->
           </div>
           <div class="tal" v-show="profile_index === 6">
             <h4>技术特点</h4>
             <p>锚杆静压桩作为一种沉桩方法，是利用原基础底板或桩基承台及上部结构传递来的重量作为压桩反力，通过预埋的锚杆、反力架、千斤顶等压桩设备,将桩段从压桩孔处压入地基土中,然后将桩与基础底板或桩基承台连接形成整体，使新桩基与原建筑物基础共同承担荷载、提高加桩区域的承载力，达到阻止或减少沉降的目的。锚杆静压桩与其它基础加固或托换技术相比具有施工时无振动、无噪音、设备简单、操作方便、移动灵活、施工所需空间小等特点。利用锚杆静压桩新技术特殊工艺，充分利用其特点，改进桩型、桩材、压桩设备，将其应用到高层建筑中桩基加固和托换中, 取得了成功。为高层建筑病害工程桩加固提供了一种更方便、更合理、更有效、更经济的加固方法。</p>
             <h4>工艺流程</h4>
             <p>确定桩位孔及定位→锚杆加工制作及埋设→桩段养护及锚杆保护安装压桩反力架第一节桩就位、校正压桩→入土深度及压力值记录下节桩就位、校正→焊接接桩一压桩→待压桩到设计要求→最终深度及压桩力验收→拆除压比桩反力架→切割桩头+清孔(配制微膨胀早强混凝士)焊接交叉筋→封桩</p>
-            <div class="techImg layoutFlex">
+            <!-- <div class="techImg layoutFlex">
               <img src="../static/images/tech/t7/t1.png" alt="">
               <img src="../static/images/tech/t7/t2.png" alt="">
               <img src="../static/images/tech/t7/t3.png" alt="">
-            </div>
+            </div> -->
           </div>
           <div class="tal" v-show="profile_index === 7">
             <p>(1)钢筋混凝土切割</p>
@@ -153,10 +222,10 @@
             <p>(3)微膨胀:浇注体长期使用无收缩，保证设备与基础紧密接触，基础与基础之间无收缩，适当的膨胀压力可确保设备长期安全运行。</p>
             <h4>适用范围</h4>
             <p>路桥工程的加固、钢结构与地基接口、设备基础的二次灌浆、栽埋钢筋、混凝土结构加固和改造、旧混凝土结构的裂缝治理、轨道及钢结构安装、静力压桩工程封桩,墙体结构的加厚及渗漏水的修复，各种基础工程的塌陷灌浆以及各种抢修工程等。</p>
-            <div class="techImg layoutFlex">
+            <!-- <div class="techImg layoutFlex">
               <img src="../static/images/tech/t8/t1.png" alt="">
               <img src="../static/images/tech/t8/t2.png" alt="">
-            </div>
+            </div> -->
           </div>
           <div class="tal" v-show="profile_index === 8">
             <p>已有建筑产生了倾斜要进行纠偏时，纠偏工作的程序为:</p>
@@ -176,11 +245,11 @@
             <p>(5)施加水平推力(或拉力)，建筑物在轨道上移动。</p>
             <p>(6)就位连接，恢复。</p>
             <p>建筑物的平移中的关键是托换技术(将建筑物荷载转换到滚动。移动装置上)、同步移动施力系统、柱切割技术和就位连接技术。</p>
-            <div class="techImg layoutFlex">
+            <!-- <div class="techImg layoutFlex">
               <img src="../static/images/tech/t9/t1.png" alt="">
               <img src="../static/images/tech/t9/t2.png" alt="">
               <img src="../static/images/tech/t9/t3.png" alt="">
-            </div>
+            </div> -->
           </div>
           <div class="tal" v-show="profile_index === 9">
             <h4>工艺流程</h4>
@@ -194,9 +263,9 @@
             <p>(6)现场需做好成品保护工作。</p>
             <h4>适用范围</h4>
             <p>适用于:对砖砌墙体裂缝、风化墙体严重及墙体砌体强度不满足规范要求的墙体。</p>
-            <div class="techImg layoutFlex">
+            <!-- <div class="techImg layoutFlex">
               <img src="../static/images/tech/t10/t1.png" alt="">
-            </div>
+            </div> -->
           </div>
 
           <div class="tal" v-show="profile_index === 10">
@@ -206,10 +275,10 @@
             <p>施工时对周围的干扰少不需要征地拆迁或占用大量的施I场地能缩短施工周期避免重复投资，具有良好的社会和经济效应。</p>
             <h4>适用范围</h4>
             <p>在梁净空不足的航道桥梁、跨线立交桥梁以及桥梁支座的更换中运用。</p>
-            <div class="techImg layoutFlex">
+            <!-- <div class="techImg layoutFlex">
               <img src="../static/images/tech/t11/t1.png" alt="">
               <img src="../static/images/tech/t11/t2.png" alt="">
-            </div>
+            </div> -->
           </div>
 
           <div class="tal" v-show="profile_index === 11">
@@ -219,11 +288,11 @@
             <p>可提高地基的抗剪强度;能利用小直径钻孔旋喷成比孔大8 ~ 10倍的大直径固结体;可用于已有建筑物地基加固而不扰动附近土体;施工噪声低，振动小;可用于任何软弱士层，可控制加固范围;设备较简单、轻便，机械化程度高;料源广阔，施工简便、粉土、砂、湿陷性黄土、人工填土及碎石土等的地基加固。</p>
             <h4>适用范围</h4>
             <p>既有建筑和新建筑的地基处理，深基坑侧壁挡土或挡水，基坑底部加固防止管涌与隆起，坝的加固与防水帷幕等工程。</p>
-            <div class="techImg layoutFlex">
+            <!-- <div class="techImg layoutFlex">
               <img src="../static/images/tech/t12/t1.png" alt="">
               <img src="../static/images/tech/t12/t2.png" alt="">
               <img src="../static/images/tech/t12/t3.png" alt="">
-            </div>
+            </div> -->
           </div>
 
 
@@ -236,12 +305,11 @@
             <p>3、施工便捷,施工质量易保证:材料不用预加工，工序方便，板材允许交叉。</p>
             <p>4、良好的耐久性和耐腐蚀性:耐酸、碱、盐及大气环境的腐蚀，不须定期维护。</p>
             <p>5、经济效益高:同等强设计。其主要的应用领域为混凝土梁抗弯、抗剪加固，混凝士楼板、桥板加固补强、砖砌体墙，剪刀墙补强，桥墩、桩等加固补强，烟囱、隧道、水池、混凝士管等加固补墙，该技术适用领域相当广泛。</p>
-            <div class="techImg layoutFlex">
+            <!-- <div class="techImg layoutFlex">
               <img src="../static/images/tech/t13/t1.png" alt="">
               <img src="../static/images/tech/t13/t2.png" alt="">
               <img src="../static/images/tech/t13/t3.png" alt="">
-              <!-- <img src="../static/images/tech/t13/t4.png" alt=""> -->
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
